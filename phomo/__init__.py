@@ -42,11 +42,22 @@ def generate_random_corpus(k=2, num_letters=10, num_restrictions=5, max_word_len
         allowed_dictionary[first].add(second)  
     allowed_dictionary = dict(allowed_dictionary)
 
-    grammar = {"symbols":  len(symbols), symbols),
-               "restrictions":  len(restrictions), restrictions),
-               "allowed": len(allowed), allowed),
+    grammar = {"symbols":  (len(symbols), symbols),
+               "restrictions":  (len(restrictions), restrictions),
+               "allowed": (len(allowed), allowed),
                "allowed_dictionary": allowed_dictionary}
 
     corpus = make_corpus(max_word_length, corpus_length, symbols, allowed_dictionary)
 
-    return grammar, corpus
+    return grammar, corpus  
+
+def a():
+    return 5
+
+def b():
+    return 5
+
+def classify_languages (sample_text, classifier):
+    return predicted_language
+
+
