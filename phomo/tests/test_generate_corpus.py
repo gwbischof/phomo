@@ -1,4 +1,4 @@
-from phomo import generate_random_corpus
+from phomo.generate import generate_random_corpus
 
 
 def test_generate_random_corpus():
